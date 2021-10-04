@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>My Advocacy Part 2</title>
+    
+    <script type="text/javascript">
+        <!--
+           
+            
+            function checkout() {
+            
+            n =  new Date();
+            y = n.getFullYear();
+            m = n.getMonth() + 1;
+            d = n.getDate();
+            document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+            
+            let fname = document.querySelector('#fname').value;
+            let lname = document.querySelector('#lname').value;
+            let address = document.querySelector('#address').value;
+            
+            let price1 = document.querySelector('#aprice').value;
+            let price2 = document.querySelector('#bprice').value;
+            let price3 = document.querySelector('#cprice').value;
+            
+            let veg1 = document.querySelector('#aname').value;
+            let veg2 = document.querySelector('#bname').value;
+            let veg3 = document.querySelector('#cname').value;
+            
+            document.querySelector('#billname').innerHTML = fname;
+            document.querySelector('#lastbill').innerHTML = lname;
+            document.querySelector('#add').innerHTML = address;
+            
+            document.querySelector('#item1').innerHTML = veg1;
+            document.querySelector('#item2').innerHTML = veg2;
+            document.querySelector('#item3').innerHTML = veg3;
+            
+            document.querySelector('#price1').innerHTML = price1;
+            document.querySelector('#price2').innerHTML = price2;
+            document.querySelector('#price3').innerHTML = price3;
+            
+            var a = Number(document.getElementById("aprice").value);
+            var b = Number(document.getElementById("bprice").value);
+            var c = Number(document.getElementById("cprice").value);
+                
+            var total = a + b + c;
+            document.querySelector('#total').innerHTML = total;   
+        }
+    
+        
+        function add() {
+            var d = Number(document.getElementById("aprice").value);
+            var e = Number(document.getElementById("bprice").value);
+            var f = Number(document.getElementById("cprice").value);
+                
+            var ttl = d + e + f;
+            document.querySelector('#ttl').innerHTML = ttl;  
+        }
+        //-->
+    </script>
+    
+    <style>
+        body {
+            background-image: url(jose.png);
+            background-size: cover;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table, th, td {
+            border: 1px solid #c21212;
+            background-color:lightblue;
+            border-collapse: collapse;
+            
+        }
+        th, td {
+            padding: 3px;
+            text-align: center;
+            width: 120px;
+        }
+        div.data-container {
+            margin-left: 30px;
+            margin-right: 30px;
+            padding: 10px;
+            text-align: left;
+        }
+        input[type=button] {
+            width: auto;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 8px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type=text], select {
+            padding: 4px 2px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=number], select {
+            padding: 4px 2px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        h1 {
+            margin-top: 0px;
+        }
+    
+    
+    </style>
+</head>
+    <body>
+        <center>
+            <h1>Food Donation Project</h1> 
+    <div class="container" style="display:inline-table">
+        <table>
+            <tr>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Price/Kilo</th>
+            </tr>
+            <tr>
+                <td><img src ="c.jpg" style="width: 100px; height: 100px;"></td>
+                <td>Carrots</td>
+                <td>120.00</td>
+            </tr>
+            <tr>
+                <td><img src ="cab.jpg" style="width: 100px; height: 100px;"></td>
+                <td>Cabbage</td>
+                <td>110.00</td>
+            </tr>
+            <tr>
+                <td><img src ="cal.webp" style="width: 100px; height: 100px;"></td>
+                <td>Squash</td>
+                <td>80.00</td>
+            </tr>
+            <tr>
+                <td><img src ="pech.jpg" style="width: 100px; height: 100px;"></td>
+                <td>Pechay</td>
+                <td>60.00</td>
+            </tr>
+            <tr>
+                <td><img src ="po.jpg" style="width: 100px; height: 100px;"></td>
+                <td>Potato</td>
+                <td>110.00</td>
+            </tr>
+        </table>         
+    </div>
+    <div class="data-container" style="display:inline-table">
+        <h3> Please Enter the Following:</h3>
+        <span>First Name:</span>&nbsp;<input type="text" id="fname" placeholder="First Name"/>
+        <br><br>
+        <span>Last Name:</span>&nbsp;<input type="text" id="lname" placeholder="Last Name"/>
+        <br><br>
+        <span>Address:&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<input type="text" id="address" placeholder="Address"/>
+        <br><br>
+        <hr>
+        <h3> Place your order here:</h3>
+        
+        <div style="border: 1px solid #dddddd;">
+            <b>Order #1</b><br>
+            <span>Vegetable:</span>&nbsp;<input type="text" id="aname"/>
+            <br>
+            <span>Price:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" id="aprice"/>
+        </div>
+        <br>
+        <div style="border: 1px solid #dddddd;">
+            <b>Order #2</b><br>
+            <span>Vegetable:</span>&nbsp;<input type="text" id="bname"/>
+            <br>
+            <span>Price:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" id="bprice"/>
+        </div>
+        <br>
+         <div style="border: 1px solid #dddddd;">
+            <b>Order #3</b><br>
+            <span>Vegetable:</span>&nbsp;<input type="text" id="cname"/>
+            <br>
+            <span>Price:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" id="cprice" onChange="add()"/>
+        </div>    
+        <br>
+        <b>Total: <u> Php &nbsp;<span id="ttl">000.00</span></u></b>&nbsp;
+        <input type="button" id="btn" value="Compute" onClick="add()">&nbsp;&nbsp;<input type="button" id="btn" value="Checkout" onClick="checkout()">
+    </div>
+            
+   
+    </body>
+
+
+
+
+</html>
